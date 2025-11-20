@@ -1,4 +1,3 @@
-# src/patterns/strategy/discount_strategy.py
 from abc import ABC, abstractmethod
 
 class DiscountStrategy(ABC):
