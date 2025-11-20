@@ -1,22 +1,23 @@
-# src/main.py
-from patterns.strategy.shopping_cart import ShoppingCart
 from patterns.strategy.percentage_discount import PercentageDiscount
-from patterns.strategy.fixed_discount import FixedDiscount
-from patterns.strategy.progressive_discount import ProgressiveDiscount
-from patterns.strategy.coupon_discount import CouponDiscount
+from patterns.strategy.shopping_cart import ShoppingCart
+from patterns.facade.checkout_facade import CheckoutFacade
+
+
+def main():
+    print("\n===== SIMULAÇÃO DO E-COMMERCE =====\n")
+
+    # 1. Criar o carrinho com uma estratégia de desconto
+    cart = ShoppingCart(
+        amount=350.00,
+        discount_strategy=PercentageDiscount(10)  # 10%
+    )
+
+    # 2. Executar checkout pela facade
+    checkout = CheckoutFacade()
+    order = checkout.checkout(cart, order_id="ORDER-001")
+
+    print("\n===== FINALIZADO =====\n")
+
 
 if __name__ == "__main__":
-    amount = 350
-
-    cart = ShoppingCart(PercentageDiscount(10))
-    print("Percentual:", cart.calculate_total(amount))
-
-    cart.set_discount_strategy(FixedDiscount(50))
-    print("Fixo:", cart.calculate_total(amount))
-
-    cart.set_discount_strategy(ProgressiveDiscount())
-    print("Progressivo:", cart.calculate_total(amount))
-
-    cart.set_discount_strategy(CouponDiscount("VIP20"))
-    print("Cupom:", cart.calculate_total(amount))
-
+    main()
