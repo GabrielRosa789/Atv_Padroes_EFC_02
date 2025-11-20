@@ -31,22 +31,6 @@ Durante a execução, o sistema demonstrará:
 - criação e atualização de pedido
 - disparo automático de notificações
 
-
--> Estrutura do projeto
-
-src/
-├── main.py
-│
-├── patterns/
-│   ├── strategy/
-│   ├── factory/
-│   ├── observer/
-│   └── facade/
-│
-├── models/
-└── services/
-
-
 -> Padrões de projeto utilizados
 
 O sistema utiliza quatro padrões de projeto, cada um empregado com propósito definido e papel claro dentro do fluxo da aplicação.
