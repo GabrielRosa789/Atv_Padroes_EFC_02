@@ -136,5 +136,6 @@ RESUMO.md
 
 
 -> Autor
-
+Gabriel de Araujo Rosa 23009817
+Jose luiz marchi 22017930
 
