@@ -1,4 +1,3 @@
-# src/patterns/strategy/percentage_discount.py
 from .discount_strategy import DiscountStrategy
 
 class PercentageDiscount(DiscountStrategy):
