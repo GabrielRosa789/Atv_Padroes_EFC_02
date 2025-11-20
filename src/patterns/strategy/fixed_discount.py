@@ -1,4 +1,3 @@
-# src/patterns/strategy/fixed_discount.py
 from .discount_strategy import DiscountStrategy
 
 class FixedDiscount(DiscountStrategy):
