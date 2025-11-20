@@ -1,4 +1,3 @@
-# src/patterns/strategy/shopping_cart.py
 from .discount_strategy import DiscountStrategy
 
 class ShoppingCart:
