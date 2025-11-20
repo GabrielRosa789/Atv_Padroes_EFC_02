@@ -1,4 +1,3 @@
-# src/patterns/strategy/coupon_discount.py
 from .discount_strategy import DiscountStrategy
 
 class CouponDiscount(DiscountStrategy):
