@@ -1,4 +1,3 @@
-# src/patterns/strategy/progressive_discount.py
 from .discount_strategy import DiscountStrategy
 
 class ProgressiveDiscount(DiscountStrategy):
